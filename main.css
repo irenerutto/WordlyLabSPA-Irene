@@ -1,0 +1,89 @@
+:root {
+  --main-color: palevioletred;
+  
+}
+
+body { font-family: Arial;
+  text-align: center;
+  margin-top: 50px;
+  background-color: whitesmoke;
+}
+
+input {
+  padding: 8px;
+  border-radius: 8px;
+}
+
+button {
+  padding: 8px;
+  border-radius: 8px;
+}
+h1 {
+  color: var(--main-color);
+}
+
+#error {
+  color: red;
+}
+
+.fav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+#favList li {
+  list-style: none;
+  margin: 5px;
+}
+
+.remove-fav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+@media (max-width: 600px) {
+
+  body {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  button {
+    width: 90%;
+  }
+
+  #result {
+    font-size: 0.95rem;
+  }
+
+  #favList {
+    padding: 0;
+  }
+
+  #favList li {
+    font-size: 0.95rem;
+  }
+
+  .fav-btn,
+  .remove-fav {
+    font-size: 1.3rem;
+  }
+}
