@@ -1,4 +1,7 @@
+// Load favorite words from localStorage.
+// If nothing is saved yet, starts with an empty array.
 let favorites = JSON.parse(localStorage.getItem("favWords")) || []
+// Get DOM elements
 const form = document.getElementById("form")
 const input = document.getElementById("input")
 const result = document.getElementById("result")
